@@ -1,0 +1,213 @@
+import React from 'react';
+
+function Carousel(){
+    return(
+    
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="../imgfolder/heart.jpg" class="d-block w-100" alt="..." style={{height:"100px"}}/>
+        </div>
+
+        <div class="carousel-item">
+        <img src="../imgfolder/j.jpg" class="d-block w-100" alt="..."  style={{height:"100px"}}/>
+        </div>
+
+        <div class="carousel-item">
+        <img src="../imgfolder/medicall.jpg" class="d-block w-100" alt="..."  style={{height:"100px"}}/>
+        </div>
+        </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    )
+}
+
+export default Carousel;
+
+
+
+
+
+
+/*import React,{useState} from 'react';
+
+function DatePicker(){
+
+const [date,setDate]=useState();
+
+console.log("Date",date);
+
+return(
+<div class="form-control me-auto" style={{width:"300px"}} >
+<h1>Clinic Registration Form</h1>
+<p> Select Date : {date}</p> <input type="date" onChange={e=>setDate(e.target.value)}/>
+</div>
+)
+}
+
+
+export default DatePicker;*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import React,{useState} from 'react';
+import { Button, Space } from 'antd';
+
+function Formreg(){
+
+const [date,setDate]=useState();
+
+console.log("Date",date);
+
+
+
+    return(
+        <div style={{width:"500px",textAlign:"center",position:"absolute",borderTop:"0px"}}>
+        <form>
+       <h1>Clinic Registration Form</h1>
+       <p> Select Date : {Formreg.date}</p> <input type="date" onChange={e=>Formreg.setDate(e.target.value)}/>
+
+         <div >
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1"/>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+        
+
+const App: React.FC = () => (
+  <Space wrap>
+    <Button type="primary">Primary Button</Button>
+    <Button>Default Button</Button>
+    <Button type="dashed">Dashed Button</Button>
+    <Button type="text">Text Button</Button>
+    <Button type="link">Link Button</Button>
+  </Space>
+);
+
+export default App;
+
+
+
+
+
+
+        <fieldset disabled>
+    <legend>Disabled fieldset example</legend>
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label">Disabled input</label>
+      <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input"/>
+    </div>
+    <div class="mb-3">
+      <label for="disabledSelect" class="form-label">Disabled select menu</label>
+      <select id="disabledSelect" class="form-select">
+        <option>Disabled select</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled/>
+        <label class="form-check-label" for="disabledFieldsetCheck">
+          Can't check this
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</div>
+
+      </form>
+</div>
+
+        )
+    }
+
+export default Formreg;
+
+
+
+
+
+
+
+
+
+
+
+
+import React from 'react';
+
+
+
+function Header(){
+        return (
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Registration
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">New Pationts Registration</a></li>
+                    <li><a class="dropdown-item" href="#">View Pationts Profiles</a></li>
+                    <li><hr class="dropdown-divider"/></li>
+                    <li><a class="dropdown-item" href="#">Requests for Inquries</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        )
+    
+}
+
+export default Header;
