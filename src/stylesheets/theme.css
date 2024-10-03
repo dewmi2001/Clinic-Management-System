@@ -1,0 +1,56 @@
+:root{
+    --colour-primary:rgb(18, 112, 122);
+    --colour-secondary:rgb(65, 3, 3);
+}
+
+.bg-primary{
+    background-color: var(--colour-primary);
+}
+.bg-secondary{
+    background-color:var(--colour-secondary);
+}
+.bg-white{
+    background-color: azure;
+}
+
+/*text colours*/
+.text-primary{
+    color: var(--colour-primary);
+}
+.text-secondary{
+    color: var(--colour-secondary);
+}
+
+.boarder-primary{
+    border-color: var(--colour-primary);
+}
+
+.boarder-secondary{
+    border-color: var(--colour-secondary);
+}
+
+
+
+
+
+.text-white{
+    color: azure;
+}
+.text-sm{
+    font-size: 14px;
+}
+.text-md{
+    font-size: 16px;
+}
+.text-lg{
+    font-size: 18px;
+}
+.text-xl{
+    font-size: 20px;
+}
+.text-2xl{
+    font-size: 24px;
+}
+.text-3xl{
+    font-size: 28px;
+}

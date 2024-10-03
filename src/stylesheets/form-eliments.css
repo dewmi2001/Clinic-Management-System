@@ -1,0 +1,43 @@
+
+input{
+    height: 10px;
+    width: 500px;
+    border: gray 1px solid;
+    padding-left: 11px;
+    font-size: 16px;
+}
+
+input:focus{
+    outline: none;
+    border: rgb(68, 67, 67);
+}
+select{
+    height: 10px;
+    width: 100px;
+    border: gray 1px solid;
+    padding-left: 11px;
+    font-size:16px;
+
+}
+
+select:focus{
+    outline: none;
+    border: rgb(68, 67, 67);
+}
+
+button{
+    height: 40px;
+    background-color: aquamarine;
+    font-size: 20px;
+    border: black 2px solid;
+    width: 10px;
+}
+
+h1{
+
+font-size: 30px;
+}
+
+Form.Item{
+    font-size: 20px;
+}
